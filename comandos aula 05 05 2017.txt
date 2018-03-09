@@ -1,0 +1,103 @@
+Comando básicos no terminal do Ubuntu:
+
+Comando grep comando de filtro;
+
+Para jogar em um arquivo usamos o > para jogar;
+Se usarmos as duas >> ele irá incrementar no final do arquivo, se usarmos com apenas uma > ele irá sobrescrever em cima do arquivo que eu destinei;
+
+comando man + seq
+
+comando para criar uma pasta mkdir + nome da pasta;
+
+o cd ~ tio vai para o home eu acho;
+
+.sh nome da extensão que usamos o
+
+no começo do arquivo colocamos o
+
+#!/bin/bash é um interpretador de comando, existe vários só que o mais usado e o bash;
+
+para salvar ctrl + o
+
+colocamos o echo + olá tudo bem?
+
+Comando para sair ctrl + x;
+
+rodar o arquivo./+nome do arquivo
+
+comando para ver as permissões ls -hl;
+
+comando para mudar as permissões chmod
+
+comando READ + nome da variável, ele criar uma variável
+
+comandos:
+
+ aluno@Lab-74:~$ sudo apt-get install brackets
+[sudo] password for aluno:
+aluno não está no arquivo sudoers. Este incidente será relatado.
+aluno@Lab-74:~$
+aluno@Lab-74:~$ cd ~
+aluno@Lab-74:~$ ls
+Android                Documentos        java_error_in_STUDIO_2447.log  Público
+AndroidStudioProjects  Downloads         jeferson                       Vídeos
+Área de Trabalho       examples.desktop Modelos
+aula .odt              Imagens           Música
+aluno@Lab-74:~$ mkdir script
+aluno@Lab-74:~$ cd script
+aluno@Lab-74:~/script$ nano oi.sh
+aluno@Lab-74:~/script$ ls
+oi.sh
+aluno@Lab-74:~/script$ ./oi.sh
+bash: ./oi.sh: Permissão negada
+aluno@Lab-74:~/script$ ls -hl
+total 4,0K
+-rw-rw-r-- 1 aluno aluno 36 Mai  5 21:54 oi.sh
+aluno@Lab-74:~/script$ man chmod
+aluno@Lab-74:~/script$ chmod +x oi.sh
+aluno@Lab-74:~/script$ ls -hl
+total 4,0K
+-rwxrwxr-x 1 aluno aluno 36 Mai  5 21:54 oi.sh
+aluno@Lab-74:~/script$ ./oi.sh
+Olá, tudo bem?
+aluno@Lab-74:~/script$ nano oi.sh
+Utilize "fg" para retornar ao nano.
+
+[1]+  Parado                  nano oi.sh
+aluno@Lab-74:~/script$ nano oi.sh
+aluno@Lab-74:~/script$ ./oi.sh
+Qual seu nome?
+jeferson
+Olá, tudo bem?
+aluno@Lab-74:~/script$ nano oi.sh
+Utilize "fg" para retornar ao nano.
+
+[2]+  Parado                  nano oi.sh
+aluno@Lab-74:~/script$ nano oi.sh
+Utilize "fg" para retornar ao nano.
+
+[3]+  Parado                  nano oi.sh
+aluno@Lab-74:~/script$ nano oi.sh
+Utilize "fg" para retornar ao nano.
+
+[4]+  Parado                  nano oi.sh
+aluno@Lab-74:~/script$ ./oi.sh
+Qual seu nome?
+Jeferson
+Olá, tudo bem Jeferson ?
+aluno@Lab-74:~/script$
+
+Comandos da aula 12-05
+
+#!/bin/bash
+echo "Digite o ano que você nasce:"
+read ano_nascimento
+idade=$((2017-ano_nascimento))
+echo ${idade}
+
+
+
+
+ 
+ 
+
